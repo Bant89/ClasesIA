@@ -2,6 +2,7 @@ from warnings import warn
 import heapq
 
 
+# For Section D
 class Node:
 
     def __init__(self, parent=None, position=None):
@@ -133,7 +134,7 @@ def astar(maze, start, end, allow_diagonal_movement=False):
     return None
 
 
-def example(print_maze=True):
+def d(print_maze=True):
     maze = [[0, 0, 0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 0],
@@ -165,5 +166,14 @@ def example(print_maze=True):
     print(path)
 
 
-# Path found [(5, 3), (6, 3), (6, 2), (6, 1), (5, 1), (5, 0), (4, 0), (3, 0), (3, 1), (2, 1), (2, 2)]
-example(True)
+# For section E
+
+
+def main():
+
+    # For section D
+    d(True)
+    # Path found [(5, 3), (6, 3), (6, 2), (6, 1), (5, 1), (5, 0), (4, 0), (3, 0), (3, 1), (2, 1), (2, 2)]
+
+
+main()
